@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamen01.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Mostrar Usuario Conectado" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtUsuarioR" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Mostrar el Nombre" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtNombreR" Keyboard="Text" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Mostrar Total a Pagar" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPagoR" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

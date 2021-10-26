@@ -14,5 +14,19 @@ namespace AppExamen01
         {
             InitializeComponent();
         }
+
+        private async void btnVerificar_Clicked(object sender, EventArgs e)
+        {
+            string usuario = txtUsuario.Text;
+            string contraseña = txtContraseña.Text;
+            if ((usuario == "estudiante2021") && (contraseña == "uisrael2021"))
+            {
+                await Navigation.PushAsync(new Registro(usuario));
+            }
+            else
+            {
+                lblMensaje.Text = "El usuario o contraseña son incorrectos";
+            }
+        }
     }
 }

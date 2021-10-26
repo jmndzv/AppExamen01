@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppExamen01.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="0" CornerRadius="0">
+                <Label Text="Registro de Usuario!" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label x:Name="lblUsuario" Grid.Row="0" Grid.Column="0"/>
+            </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombre" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Monto:" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtMontoI" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Pago Mensual:" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtPagoM" Keyboard="Numeric" IsEnabled="False" Grid.Row="2" Grid.Column="1"/>
+
+                <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" Grid.Row="3" Grid.Column="1"/>
+
+            </Grid>
+
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
