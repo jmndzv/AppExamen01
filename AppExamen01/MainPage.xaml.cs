@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace AppExamen01
 {
-    public partial class MainPage : ContentPage
+    public partial class Login : ContentPage
     {
-        public MainPage()
+        public Login()
         {
             InitializeComponent();
         }

@@ -133,4 +133,7 @@
       <Name>AppExamen01</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\uisrael.jpg" />
+  </ItemGroup>
 </Project>
