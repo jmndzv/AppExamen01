@@ -5,7 +5,7 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Bienvenido - Examen JOSÉ MÉNDEZ" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="Bienvenido - Examen Aplicaciones JOSÉ MÉNDEZ" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
 
         <Image Source="uisrael.jpg" WidthRequest="120" HeightRequest="120"/>
